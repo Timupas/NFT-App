@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  background: #1e1e2e;
+  color: white;
+  height: 100%;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+canvas {
+  background: #2e2e3e;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 20px 0 10px;
+}
+
+button {
+  background: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.inventory-grid div {
+  background: #394264;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+}
+
+.shop-items {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shop-items div {
+  background: #3c3f58;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #2b2f4a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #444;
+}
+
+.tab-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; /* размер иконки */
+  color: rgba(255, 255, 255, 0.4); /* белый с прозрачностью */
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+.tab-button.active {
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

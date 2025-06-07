@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NFT Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+<div class="tab-content active" id="tab-game">
+  <!-- тут твоя змейка -->
+  <canvas id="gameCanvas" width="300" height="300"></canvas>
+</div>
+
+<div class="tab-content" id="tab-store">
+  <h2 style="color: white;">Магазин</h2>
+  <p style="color: white;">Здесь будут продаваться NFT и бусты</p>
+</div>
+
+<div class="tab-content" id="tab-cases">
+  <h2 style="color: white;">Кейсы</h2>
+  <p style="color: white;">Открывай кейсы и выбивай NFT!</p>
+</div>
+
+    <!-- Нижняя навигация -->
+  <div class="bottom-nav">
+   <div class="tab-button active" data-tab="tab-game">🎮</div>
+   <div class="tab-button" data-tab="tab-store">🛒</div>
+   <div class="tab-button" data-tab="tab-cases">💼</div>
+  </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
