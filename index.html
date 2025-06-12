@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NFT Game</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFT Card | Telegram WebApp Style</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-container">
-<div class="tab-content active" id="tab-game">
-  <!-- тут твоя змейка -->
-  <canvas id="gameCanvas" width="300" height="300"></canvas>
-</div>
 
-<div class="tab-content" id="tab-store">
-  <h2 style="color: white;">Магазин</h2>
-  <p style="color: white;">Здесь будут продаваться NFT и бусты</p>
-</div>
+  <div class="nft-card">
+    <div class="nft-image">
+      <img src="card-placeholder.png" alt="NFT Card">
+    </div>
 
-<div class="tab-content" id="tab-cases">
-  <h2 style="color: white;">Кейсы</h2>
-  <p style="color: white;">Открывай кейсы и выбивай NFT!</p>
-</div>
+    <h2 class="nft-title">WOW!</h2>
 
-    <!-- Нижняя навигация -->
-  <div class="bottom-nav">
-   <div class="tab-button active" data-tab="tab-game">🎮</div>
-   <div class="tab-button" data-tab="tab-store">🛒</div>
-   <div class="tab-button" data-tab="tab-cases">💼</div>
+    <div class="nft-buttons">
+      <button class="nft-btn">
+        <img src="send-icon.svg" alt="Send Icon">Send
+      </button>
+      <button class="nft-btn">
+        <img src="share-icon.svg" alt="Share Icon">Share
+      </button>
+    </div>
+
+    <div class="nft-info-table">
+      <div class="nft-info-row">
+        <div class="nft-info-label">Owner</div>
+        <div class="nft-info-value">
+          <img src="avatar.png" class="nft-avatar" alt="Avatar">{username}
+        </div>
+      </div>
+
+      <div class="nft-info-row">
+        <div class="nft-info-label">Game</div>
+        <div class="nft-info-value">
+          Galaxite
+        </div>
+      </div>
+
+      <div class="nft-info-row">
+        <div class="nft-info-label">Collection</div>
+        <div class="nft-info-value">1st collection</div>
+      </div>
+
+      <div class="nft-info-row">
+        <div class="nft-info-label">Rarity</div>
+        <div class="nft-info-value">Legendary</div>
+      </div>
+
+      <div class="nft-info-row">
+        <div class="nft-info-label">Type</div>
+        <div class="nft-info-value">Card</div>
+      </div>
+
+      <div class="nft-info-row">
+        <div class="nft-info-label">Issued</div>
+        <div class="nft-info-value">#00001</div>
+      </div>
+    </div>
+
+    <button class="main-action">Trade on TON</button>
   </div>
 
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
