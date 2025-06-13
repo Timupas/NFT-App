@@ -28,6 +28,34 @@ body {
   margin-bottom: 16px;
 }
 
+.nft-bg {
+  border-radius: 16px;
+  padding: 10px; /* отступы вокруг гифки */
+  background-color: #111; /* начальный фон */
+  max-width: 200px; /* или твой размер */
+  margin: 0 auto 20px; /* центрируем и отступ снизу */
+}
+
+.nft-gif img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.nft-gif img {
+  filter: drop-shadow(0 0 8px white);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px white);
+  }
+  to {
+    filter: drop-shadow(0 0 13px white);
+  }
+}
+
 .nft-buttons {
   display: flex;
   justify-content: space-between;
@@ -86,6 +114,24 @@ body {
   gap: 6px;
 }
 
+.make-btn {
+  background-color: rgba(0, 140, 255, 0.356); /* полупрозрачный синий */
+  border: none;
+  border-radius: 20px; /* сильно закругленные края */
+  padding: 6px 14px;
+  color: rgb(0, 174, 255);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  min-width: 60px;
+}
+
+.make-btn:hover {
+  background-color: rgba(26, 150, 252, 0.541);
+}
+
 .nft-avatar {
   width: 20px;
   height: 20px;
@@ -112,4 +158,20 @@ body {
 
 .main-action:hover {
   background-color: #e4e4e4;
+}
+
+
+.color-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
 }

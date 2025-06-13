@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NFT Card | Telegram WebApp Style</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BLIKK NFT WebApp</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="nft-card">
-    <div class="nft-image">
-      <img src="card-placeholder.png" alt="NFT Card">
+  <h2 class="nft-title">Black Cherry <br>[With popcorn]</h2>
+
+  <div class="nft-bg nft-card">
+    <div class="nft-gif">
+      <img src="./gifs/blackcherry.tgs" alt="NFT GIF" />
     </div>
-
-    <h2 class="nft-title">WOW!</h2>
-
-    <div class="nft-buttons">
-      <button class="nft-btn">
-        <img src="send-icon.svg" alt="Send Icon">Send
-      </button>
-      <button class="nft-btn">
-        <img src="share-icon.svg" alt="Share Icon">Share
-      </button>
-    </div>
-
-    <div class="nft-info-table">
-      <div class="nft-info-row">
-        <div class="nft-info-label">Owner</div>
-        <div class="nft-info-value">
-          <img src="avatar.png" class="nft-avatar" alt="Avatar">{username}
-        </div>
-      </div>
-
-      <div class="nft-info-row">
-        <div class="nft-info-label">Game</div>
-        <div class="nft-info-value">
-          Galaxite
-        </div>
-      </div>
-
-      <div class="nft-info-row">
-        <div class="nft-info-label">Collection</div>
-        <div class="nft-info-value">1st collection</div>
-      </div>
-
-      <div class="nft-info-row">
-        <div class="nft-info-label">Rarity</div>
-        <div class="nft-info-value">Legendary</div>
-      </div>
-
-      <div class="nft-info-row">
-        <div class="nft-info-label">Type</div>
-        <div class="nft-info-value">Card</div>
-      </div>
-
-      <div class="nft-info-row">
-        <div class="nft-info-label">Issued</div>
-        <div class="nft-info-value">#00001</div>
-      </div>
-    </div>
-
-    <button class="main-action">Trade on TON</button>
   </div>
 
+  <div class="nft-buttons">
+    <button class="nft-btn">
+      <img src="./img/tg-logo-mini.png" alt="Send Icon" />Send
+    </button>
+    <button class="nft-btn">
+      <img src="./img/share-logo.png" alt="Share Icon" />Share
+    </button>
+  </div>
+
+  <div class="nft-info-table">
+    <div class="nft-info-row">
+      <div class="nft-info-label">Owner</div>
+      <div class="nft-info-value">
+        <img src="avatar.png" class="nft-avatar" alt="Avatar" />{username}
+      </div>
+    </div>
+
+    <div class="nft-info-row">
+      <div class="nft-info-label">Game</div>
+      <div class="nft-info-value">BLIKK Snake</div>
+    </div>
+
+    <div class="nft-info-row">
+      <div class="nft-info-label">Collection</div>
+      <div class="nft-info-value">Black Cherry</div>
+    </div>
+
+    <div class="nft-info-row">
+      <div class="nft-info-label">Rarity</div>
+      <div class="nft-info-value">Legendary</div>
+    </div>
+
+    <div class="nft-info-row">
+      <div class="nft-info-label">Type</div>
+      <div class="nft-info-value">NFT Card</div>
+    </div>
+
+    <div class="nft-info-row">
+      <div class="nft-info-label">Issued</div>
+      <div class="nft-info-value">#00001</div>
+    </div>
+
+    <div class="nft-info-row">
+      <div class="nft-info-label">Make Unique</div>
+      <div class="nft-info-value">
+        <button class="make-btn">Make</button>
+      </div>
+    </div>
+    
+    <div class="nft-info-row color-row">
+      <div class="nft-info-label">Color</div>
+      <div class="nft-info-value color-value">
+        <span class="color-name">—</span>
+        <span class="color-circle" style="background-color: transparent;"></span>
+        <span class="color-chance">—</span>
+      </div>
+    </div>
+  </div>
+
+  <button class="main-action">Trade on TON</button>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
