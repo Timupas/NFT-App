@@ -113,4 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+const tg = window.Telegram.WebApp;
+tg.expand(); // расширить WebApp на весь экран
+
+
+const user = tg.initDataUnsafe?.user;
+console.log(user.username); // или .first_name и т.д.
+
 
